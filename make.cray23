@@ -1,0 +1,8 @@
+#
+# any version >= cray 23
+#
+CC         = craycc
+OPT_FLAGS  = -O3 -ffast-math -ffp=3
+PLAT_FLAGS = -mcpu=a64fx
+OMP_FLAGS  = -fopenmp
+LIBS       =

@@ -1,0 +1,8 @@
+#
+# any version < cray 23
+#
+CC         = cc
+OPT_FLAGS  = -O3 -h vector3
+PLAT_FLAGS =
+OMP_FLAGS  = -h omp
+LIBS       =
