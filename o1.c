@@ -44,12 +44,12 @@ int main(void)
     const real tol = 1.0e-5;
 
     // set rhs
-    for (int iy = 1; iy < NY-1; iy++) {
-        for (int ix = 1; ix < NX-1; ix++ ) {
-            const real x = -1.0 + (2.0*ix/(NX-1));
-            const real y = -1.0 + (2.0*iy/(NY-1));
+    for (int iy = 1; iy < NY - 1; iy++) {
+        for (int ix = 1; ix < NX - 1; ix++ ) {
+            const real x = -1.0 + (2.0 * ix / (NX - 1));
+            const real y = -1.0 + (2.0 * iy / (NY - 1));
 
-            rhs[iy][ix] = expr(-10.0*(x*x + y*y));
+            rhs[iy][ix] = expr(-10.0 * (x * x + y * y));
         }
     }
 
@@ -66,9 +66,9 @@ int main(void)
         for (int iy = 1; iy < NY - 1; iy++) {
             for (int ix = 1; ix < NX - 1; ix++ ) {
                 Anew[iy][ix] = -0.25 * (rhs[iy][ix] -
-                                        ( A[iy][ix+1] + A[iy][ix-1]
-                                          + A[iy-1][ix] + A[iy+1][ix] ));
-                error = fmaxr( error, fabsr(Anew[iy][ix]-A[iy][ix]));
+                                        ( A[iy][ix + 1] + A[iy][ix - 1]
+                                          + A[iy - 1][ix] + A[iy + 1][ix] ));
+                error = fmaxr(error, fabsr(Anew[iy][ix] - A[iy][ix]));
             }
         }
 
