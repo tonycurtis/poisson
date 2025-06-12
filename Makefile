@@ -2,6 +2,7 @@
 
 CFLAGS  = $(OPT_FLAGS)
 CFLAGS += $(PLAT_FLAGS)
+CFLAGS += $(REPORT_FLAGS)
 CFLAGS += $(OMP_FLAGS)
 
 EXE    = a.out

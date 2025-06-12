@@ -1,5 +1,5 @@
-CC         = armclang
-OPT_FLAGS  = -O3 -ffast-math -Rpass=loop-vectorize
-PLAT_FLAGS = -mcpu=a64fx
-OMP_FLAGS  = -fopenmp
-LIBS       =
+CC             = armclang
+OPT_FLAGS      = -O3 -ffast-math -Rpass=loop-vectorize
+PLAT_FLAGS     = -mcpu=a64fx
+OMP_FLAGS      = -fopenmp
+LIBS           =

@@ -1,5 +1,6 @@
-CC         = icx
-OPT_FLAGS  = -O3 -ffast-math
-PLAT_FLAGS =
-OMP_FLAGS  = -qopenmp
-LIBS       =
+CC             = icx
+OPT_FLAGS      = -O3 -ffast-math
+REPORT_FLAGS   = -qopt-report
+PLAT_FLAGS     =
+OMP_FLAGS      = -qopenmp
+LIBS           =

@@ -1,5 +1,6 @@
-CC         = nvc
-OPT_FLAGS  = -O3 -ffast-math
-PLAT_FLAGS = -tp=neoverse-v1
-OMP_FLAGS  = -mp
-LIBS       =
+CC             = nvc
+OPT_FLAGS      = -O3 -ffast-math
+REPORT_FLAGS   = -Minfo=vect
+PLAT_FLAGS     = -tp=neoverse-v1
+OMP_FLAGS      = -mp
+LIBS           =
