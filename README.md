@@ -6,7 +6,7 @@ and parallelization.
 source that we're compiling.
 
 To compile with each of the compiler suites available, make sure the
-modules are loaded, and do
+appropriate module is loaded, and do
 
 ```
     $ make comp=NAME
