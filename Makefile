@@ -1,4 +1,6 @@
--include make.$(comp)
+comp ?= gnu
+
+include make.$(comp)
 
 CFLAGS  = $(OPT_FLAGS)
 CFLAGS += $(PLAT_FLAGS)
