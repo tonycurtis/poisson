@@ -43,7 +43,10 @@ int main(void)
     const int iter_max = 1000;
     const real tol = 1.0e-5;
 
-    // set rhs
+    /* set the entire array to 0 */
+    memset(A, 0, NY * NX * sizeof(real));
+
+    /* set rhs */
     for (int iy = 1; iy < NY - 1; iy++) {
         for (int ix = 1; ix < NX - 1; ix++ ) {
             const real x = -1.0 + (2.0 * ix / (NX - 1));
@@ -79,7 +82,7 @@ int main(void)
             }
         }
 
-        //Periodic boundary conditions
+        /* Periodic boundary conditions */
         for (int ix = 1; ix < NX - 1; ix++ ) {
             A[0][ix]        = A[(NY - 2)][ix];
             A[(NY - 1)][ix] = A[1][ix];
